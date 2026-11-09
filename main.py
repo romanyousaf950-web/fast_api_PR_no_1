@@ -25,3 +25,10 @@ def about():
     return {
         "message": "This is a FastAPI User Management Project"
     }
+
+@app.get("/version")
+def version():
+    return {
+        "version": "1.0",
+        "message": "Feature branch is working"
+    }
